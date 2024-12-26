@@ -1,22 +1,17 @@
-// Nav.js
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Nav() {
   return (
     <nav>
       <ul>
         <li>
-          <a href="/home">Home</a>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <a href="/menu">Menu</a>
+          <Link to="/booking">Book a Table</Link>
         </li>
-        <li>
-          <a href="/about">About</a>
-        </li>
-        <li>
-          <a href="/contact">Contact</a>
-        </li>
+        {/* Other nav items */}
       </ul>
     </nav>
   );

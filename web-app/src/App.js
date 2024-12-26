@@ -1,18 +1,17 @@
-// App.js
 import React from "react";
-import Header from "./Header";
-import Nav from "./Nav";
-import Main from "./Main";
-import Footer from "./Footer";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import BookingPage from "./BookingPage";
+import Nav from "./Nav"; // Assuming you have a Nav component
 
 function App() {
   return (
-    <>
-      <Header />
+    <Router>
       <Nav />
-      <Main />
-      <Footer />
-    </>
+      <Routes>
+        <Route path="/booking" element={<BookingPage />} />
+        {/* Other routes here */}
+      </Routes>
+    </Router>
   );
 }
 
